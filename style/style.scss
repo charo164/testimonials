@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+$ModerateViolet: #7541c8;
+$VeryDarkGrayishBlue: #48556a;
+$VeryDarkBlackishBlue: #19212e;
+$White: #ffffff;
+$LightGray: #cfcfcf;
+$LightGrayishBlue: #ecf2f8;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $LightGrayishBlue;
+}
+section {
+  margin: 12px;
+  padding: 25px 40px;
+  border-radius: 15px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  height: 92%;
+}
+.profile {
+  display: flex;
+  padding: 8px 0;
+  img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffffff80;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: $White;
+  }
+  b {
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.5;
+    color: $White;
+  }
+}
+.title {
+  font-size: 20px;
+  padding: 8px 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  color: $White;
+}
+.body {
+  padding: 8px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: $White;
+  opacity: 0.7;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 75%;
+  .leftTopContainer,
+  .leftBottomContainer {
+    display: flex;
+    flex: 50%;
+  }
+  .DanielClifford {
+    flex: 66%;
+    display: flex;
+    flex-direction: column;
+    background-color: $ModerateViolet;
+  }
+  .JonathanWalters {
+    flex: 33%;
+    background-color: $VeryDarkGrayishBlue;
+  }
+  .JeanetteHarmon {
+    flex: 33%;
+    background-color: White;
+    h2,
+    b,
+    .body,
+    .title {
+      color: #000000;
+    }
+  }
+  .PatrickAbrams {
+    flex: 66%;
+    background-color: $VeryDarkBlackishBlue;
+  }
+}
+
+.KiraWhittle {
+  flex: 15%;
+  background-color: White;
+  h2,
+  b,
+  .body,
+  .title {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .leftTopContainer,
+  .leftBottomContainer {
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .body {
+    font-size: 12px;
+  }
+  section {
+    padding: 20px;
+  }
+}
