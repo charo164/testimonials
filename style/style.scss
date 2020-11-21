@@ -85,6 +85,9 @@ section {
     flex: 66%;
     display: flex;
     flex-direction: column;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0;
     background-color: $ModerateViolet;
   }
   .JonathanWalters {
